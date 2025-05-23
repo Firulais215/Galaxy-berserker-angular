@@ -1,1 +1,153 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Nabla&family=Orbitron:wght@400..900&family=Sixtyfour&display=swap');
+
+/*// <weight>: Use a value from 400 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.orbitron-<uniquifier> {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  
+.major-mono-display-regular {
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sixtyfour-<uniquifier> {
+  font-family: "Sixtyfour", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+}
+*/
+
+
+body{
+    /*background-color: #03091A;*/
+    background-image: url("/fondo2.gif");
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+    color: white;
+    
+}
+
+.text-content{
+  background-color: #2b2e3c;
+  transition: transform 0.5s ease;
+}
+
+.text-content:hover{
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    
+}
+
+a:hover{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.carousel-inner {
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: 200px;
+  }
+}
+
+.game-fondo{
+  background-image: url("/amongos.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+ 
+}
+
+.enlaces{
+  color:goldenrod;
+  transition: all 0.3s ease;
+}
+.enlaces:hover{
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  transition: color 0.3s ease;
+}
+
+h1{
+    font-family: "Major Mono Display", monospace;
+    color: white;
+    text-align: center;
+}
+
+.contacto{
+  border-radius: 10px;
+  border-color: white;
+  border-style: solid;
+  background-color: #03091A;
+  margin: 0 auto;
+  padding: 20px;
+  margin: 20px;
+}
+
+.boton-form{
+  background-color: #03091A;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.boton-form:hover{
+  background-color: white;
+  color: #03091A;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.floating {
+  
+  position: relative;
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0),translateX(0);
+  }
+
+  25% {
+      transform: translateX(-10px);
+  }
+
+  50% {
+      transform: translateY(-20px);
+  }
+
+  75% {
+      transform: translateX(10px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
+
+
